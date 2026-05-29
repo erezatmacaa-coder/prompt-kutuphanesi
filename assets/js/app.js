@@ -8,8 +8,13 @@ function loadPrompts() {
   const stored = localStorage.getItem(STORAGE_KEY);
   prompts = stored ? JSON.parse(stored) : [];
   if (!prompts.length) {
-    prompts = getDefaultPrompts();
-    savePrompts();
+    try {
+      prompts = getDefaultPrompts();
+      savePrompts();
+    } catch (e) {
+      prompts = getFallbackPrompts();
+      savePrompts();
+    }
   }
   render();
 }
@@ -150,7 +155,7 @@ function getDefaultPrompts() {
         '[KONU] ile ilgili sözleşmenin önemli maddelerini özetle.',
         '[KİŞİ] için performans değerlendirme raporu hazırla.',
         'Bir [SEKTÖR] girişimi için kısa iş planı hazırla: vizyon, misyon, hedefler.',
-        '[KONU] hakkında LinkedIn'de yayınlamak için profesyonel bir yazı yaz.',
+        '[KONU] hakkında LinkedIn\'de yayınlamak için profesyonel bir yazı yaz.',
         '[ÜRÜN/HİZMET] için kısa bir tanıtım yazısı hazırla.',
         '[KONU] hakkında müşteri memnuniyeti anketi için sorular hazırla.',
         '[DURUM] durumunda kriz yönetimi planı hazırla, adım adım.',
@@ -184,7 +189,7 @@ function getDefaultPrompts() {
         'Evde başlanabilecek [BÜTÇE] TL bütçeli yaratıcı bir hobi öner.',
         '[DURUM] için sağlıklı yaşam tavsiyeleri ver, 5 madde.',
         '[KONU] temalı bir doğum günü davetiyesi metni yaz.',
-        '[KONU] hakkında Instagram'da paylaşmak için ilgi çekici bir gönderi yaz.',
+        '[KONU] hakkında Instagram\'da paylaşmak için ilgi çekici bir gönderi yaz.',
         'Evde kolayca yetiştirilebilecek 5 bitki öner ve bakım ipuçları ver.',
         'Hızlı ev temizliği için 10 adımlık bir plan hazırla.',
         'Yeni bir dil öğrenmeye başlayan biri için 1 aylık çalışma programı hazırla.',
@@ -227,7 +232,8 @@ function getDefaultPrompts() {
       text = text.replace('[İŞLEM]', 'Belirlediğin bir işlem');
       text = text.replace('[SEKTÖR]', 'E-ticaret');
       text = text.replace('[SEKTÖR]', 'E-ticaret');
-      text = text.replace('[POZISYON]', data.topics[Math.floor(Math.random() * data.topics.length)]);
+      text = text.replace('[POZİSYON]', data.topics[Math.floor(Math.random() * data.topics.length)]);
+      text = text.replace('[ÜRÜN/HİZMET]', data.topics[Math.floor(Math.random() * data.topics.length)]);
       text = text.replace('[ÜRÜN]', data.topics[Math.floor(Math.random() * data.topics.length)]);
       text = text.replace('[HEDEF]', 'Belirlediğin bir hedef');
       text = text.replace('[ALICI]', 'alici@firma.com');
@@ -250,7 +256,7 @@ function getDefaultPrompts() {
       text = text.replace('[TAKIM]', 'Takım adı');
       text = text.replace('[ÖZELLIK]', 'karakteristik özellik');
       text = text.replace('[DURUM]', ['sağlıklı', 'stresli', 'üşengeç', 'motivasyonu yüksek', 'zamanı kısıtlı'][Math.floor(Math.random() * 5)]);
-      text = text.replace('[KATEGORILER]', 'fatura, gıda, eğlence, ulaşım, sağlık');
+      text = text.replace('[KATEGORİLER]', 'fatura, gıda, eğlence, ulaşım, sağlık');
       text = text.replace('[SORUN]', 'karşılaştığın bir sorun');
       text = text.replace('[FRAMEWORK]', data.topics[Math.floor(Math.random() * data.topics.length)]);
       text = text.replace('[ŞIRKET]', 'Şirket Adı');
@@ -262,6 +268,7 @@ function getDefaultPrompts() {
       text = text.replace('[KÜTÜPHANE]', data.topics[Math.floor(Math.random() * data.topics.length)]);
       text = text.replace('[LOG]', 'sistem logları');
       text = text.replace('[HATA]', 'karşılaştığın hata mesajı');
+      text = text.replace(/\[[A-ZÇŞĞÜÖİ\/]+\]/g, 'belirlediğin bir değer');
 
       const descs = [
         'AI ile hızlıca çöz.',
@@ -288,6 +295,18 @@ function getDefaultPrompts() {
   });
 
   return result;
+}
+
+function getFallbackPrompts() {
+  const today = new Date().toLocaleDateString('tr-TR');
+  return [
+    { id: 1, title: 'Kod Açıklaması', category: 'yazilim', text: 'Şu kodu satır satır açıkla: [kodunu buraya yapıştır]', desc: 'Herhangi bir kod parçasını anlamana yardımcı olur.', date: today },
+    { id: 2, title: 'Hata Ayıklama', category: 'yazilim', text: 'Bu kodda hata var. Hatayı bul ve düzelt: [kodunu buraya yapıştır]', desc: 'Kodundaki hataları AI ile bul.', date: today },
+    { id: 3, title: 'Hikaye Oluştur', category: 'yaraticilik', text: '[konu] hakkında kısa bir hikaye yaz.', desc: 'Yaratıcı hikayeler oluşturmak için.', date: today },
+    { id: 4, title: 'Konu Özeti', category: 'egitim', text: '[konu] hakkında detaylı bir özet çıkar.', desc: 'Ders çalışırken konuları özetletmek için ideal.', date: today },
+    { id: 5, title: 'E-posta Taslağı', category: 'is', text: '[konu] hakkında profesyonel bir e-posta taslağı hazırla.', desc: 'İş e-postalarını hızlıca hazırla.', date: today },
+    { id: 6, title: 'Yemek Tarifi', category: 'gunluk', text: 'Elimdeki malzemelerle yapılabilecek kolay bir yemek tarifi ver.', desc: 'Elimizdeki malzemelerle ne yapabileceğimizi sorar.', date: today }
+  ];
 }
 
 function savePrompts() {
