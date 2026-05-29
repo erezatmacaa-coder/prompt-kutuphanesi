@@ -266,7 +266,8 @@ if (glow) {
 
 document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('keydown', e => {
-  if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) || (e.ctrlKey && ['U', 'S'].includes(e.key))) {
+  const k = e.key.toUpperCase();
+  if (k === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(k)) || (e.ctrlKey && ['U', 'S'].includes(k))) {
     e.preventDefault();
   }
 });
