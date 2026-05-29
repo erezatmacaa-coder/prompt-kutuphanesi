@@ -17,6 +17,7 @@
     <div class="nav-container">
       <a href="#" class="logo">PK<span class="logo-accent">.</span></a>
       <div class="nav-actions">
+        <button class="lang-btn" id="langToggle" onclick="switchLang(currentLang === 'tr' ? 'en' : 'tr')">EN</button>
         <span id="promptCount" class="count-badge">0</span>
         <button class="btn btn-primary" id="addBtn"><i class="fas fa-plus"></i> Yeni Prompt</button>
       </div>
@@ -90,6 +91,12 @@
 
   <div class="toast" id="toast"></div>
 
+  <footer class="site-footer">
+    <p id="footerText">© 2025 Samet Erez Atmaca. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/prompts.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

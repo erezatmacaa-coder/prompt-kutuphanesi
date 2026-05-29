@@ -88,3 +88,6 @@ body{font-family:'Inter',sans-serif;background:#07070e;color:#e0e0f0;overflow-x:
   .filters{gap:6px}
   .filter-btn{padding:6px 14px;font-size:12px}
 }
+.site-footer{text-align:center;padding:24px;font-size:13px;color:#5555aa;border-top:1px solid rgba(255,255,255,.04);margin-top:48px}
+.lang-btn{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);color:#e0e0f0;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:700;transition:all .2s;font-family:'Inter',sans-serif;letter-spacing:.5px}
+.lang-btn:hover{border-color:#00d4ff;color:#00d4ff}
