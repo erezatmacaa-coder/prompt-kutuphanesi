@@ -21,9 +21,26 @@
 3. \u0130stedi\u011fin prompt'u kopyala, d\u00fczenle veya sil
 4. Kendi prompt'lar\u0131n\u0131 da ekleyebilirsin
 
+## Premium Prompt Packs 🚀
+
+Profesyonel, test edilmiş AI prompt paketleri satışta.
+
+| Paket | Prompt | Fiyat | Platform |
+|-------|--------|-------|----------|
+| 🖥️ **Yazılım Geliştirme** | 12 | $3.99 | PromptBase / Etsy |
+| ✍️ **Yaratıcı Yazarlık** | 10 | $3.99 | PromptBase / Etsy |
+| 📚 **Eğitim** | 10 | $3.99 | PromptBase / Etsy |
+| 💼 **İş Hayatı** | 10 | $3.99 | PromptBase / Etsy |
+| 🌟 **Günlük Hayat** | 10 | $3.99 | PromptBase / Etsy |
+| 📦 **Ultimate Mega Pack** | 52 | $12.99 | Etsy |
+
+👉 **[Free Sample Pack](https://github.com/erezatmacaa-coder/prompt-kutuphanesi/releases/tag/free-sample-pack-v1)** — 5 premium prompt'u ücretsiz dene!
+
+Tüm prompt'lar ChatGPT, Claude ve Gemini ile test edilmiştir.
+
 ## Teknik
 
 - Saf frontend (HTML/CSS/JS)
 - Font Awesome ikonlar
-- Local Storage ile kal\u0131c\u0131l\u0131k
+- Local Storage ile kalıcılık
 - GitHub Pages ile deploy
