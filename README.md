@@ -25,18 +25,20 @@
 
 Profesyonel, test edilmiş AI prompt paketleri satışta.
 
-| Paket | Prompt | Fiyat | Platform |
-|-------|--------|-------|----------|
-| 🖥️ **Yazılım Geliştirme** | 12 | $3.99 | PromptBase / Etsy |
-| ✍️ **Yaratıcı Yazarlık** | 10 | $3.99 | PromptBase / Etsy |
-| 📚 **Eğitim** | 10 | $3.99 | PromptBase / Etsy |
-| 💼 **İş Hayatı** | 10 | $3.99 | PromptBase / Etsy |
-| 🌟 **Günlük Hayat** | 10 | $3.99 | PromptBase / Etsy |
-| 📦 **Ultimate Mega Pack** | 52 | $12.99 | Etsy |
-
 👉 **[Free Sample Pack](https://github.com/erezatmacaa-coder/prompt-kutuphanesi/releases/tag/free-sample-pack-v1)** — 5 premium prompt'u ücretsiz dene!
 
 Tüm prompt'lar ChatGPT, Claude ve Gemini ile test edilmiştir.
+
+**📦 Tüm paketler satışta:** [Gumroad Mağazam →](https://erezatmacaa.gumroad.com)
+
+| Paket | Prompt | Fiyat |
+|-------|--------|-------|
+| 🖥️ **Yazılım Geliştirme** | 12 | $3.99 |
+| ✍️ **Yaratıcı Yazarlık** | 10 | $3.99 |
+| 📚 **Eğitim** | 10 | $3.99 |
+| 💼 **İş Hayatı** | 10 | $3.99 |
+| 🌟 **Günlük Hayat** | 10 | $3.99 |
+| 📦 **Ultimate Mega Pack** | 52 | $12.99 |
 
 ## Teknik
 

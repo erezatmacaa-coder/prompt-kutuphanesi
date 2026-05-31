@@ -6,20 +6,20 @@ Professionally crafted, tested AI prompt packs for developers, creators, and pro
 
 | Pack | Prompts | Price | Platform |
 |------|---------|-------|----------|
-| 🖥️ **Software Development Pack** | 12 | $3.99 | PromptBase / Etsy |
-| ✍️ **Creative Writing Pack** | 10 | $3.99 | PromptBase / Etsy |
-| 📚 **Education Pack** | 10 | $3.99 | PromptBase / Etsy |
-| 💼 **Business Pack** | 10 | $3.99 | PromptBase / Etsy |
-| 🌟 **Daily Life Pack** | 10 | $3.99 | PromptBase / Etsy |
-| 📦 **Ultimate Mega Pack** | 52 | $12.99 | Etsy |
+| 🖥️ **Software Development Pack** | 12 | $3.99 | [Gumroad](https://erezatmacaa.gumroad.com) |
+| ✍️ **Creative Writing Pack** | 10 | $3.99 | [Gumroad](https://erezatmacaa.gumroad.com) |
+| 📚 **Education Pack** | 10 | $3.99 | [Gumroad](https://erezatmacaa.gumroad.com) |
+| 💼 **Business Pack** | 10 | $3.99 | [Gumroad](https://erezatmacaa.gumroad.com) |
+| 🌟 **Daily Life Pack** | 10 | $3.99 | [Gumroad](https://erezatmacaa.gumroad.com) |
+| 📦 **Ultimate Mega Pack** | 52 | $12.99 | [Gumroad](https://erezatmacaa.gumroad.com) |
+
+## 🛒 Buy Now
+
+👉 **[Visit Gumroad Store →](https://erezatmacaa.gumroad.com)**
 
 ## Free Sample
 
-Download our [Free Sample Pack](https://github.com/erezatmacaa-coder/prompt-kutuphanesi/releases) (5 prompts) to test the quality.
-
-## Custom Prompts
-
-Need something specific? Commission custom prompts via Fiverr.
+Download our [Free Sample Pack](https://github.com/erezatmacaa-coder/prompt-kutuphanesi/releases/tag/free-sample-pack-v1) (5 prompts) to test the quality.
 
 ## Why Buy?
 
