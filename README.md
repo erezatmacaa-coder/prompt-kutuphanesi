@@ -20,26 +20,6 @@
 2. Kategoriye g\u00f6re filtrele veya ara
 3. \u0130stedi\u011fin prompt'u kopyala, d\u00fczenle veya sil
 4. Kendi prompt'lar\u0131n\u0131 da ekleyebilirsin
-
-## Premium Prompt Packs 🚀
-
-Profesyonel, test edilmiş AI prompt paketleri satışta.
-
-👉 **[Free Sample Pack](https://github.com/erezatmacaa-coder/prompt-kutuphanesi/releases/tag/free-sample-pack-v1)** — 5 premium prompt'u ücretsiz dene!
-
-Tüm prompt'lar ChatGPT, Claude ve Gemini ile test edilmiştir.
-
-**📦 Tüm paketler satışta:** [Gumroad Mağazam →](https://erezatmacaa.gumroad.com)
-
-| Paket | Prompt | Fiyat |
-|-------|--------|-------|
-| 🖥️ **Yazılım Geliştirme** | 12 | $3.99 |
-| ✍️ **Yaratıcı Yazarlık** | 10 | $3.99 |
-| 📚 **Eğitim** | 10 | $3.99 |
-| 💼 **İş Hayatı** | 10 | $3.99 |
-| 🌟 **Günlük Hayat** | 10 | $3.99 |
-| 📦 **Ultimate Mega Pack** | 52 | $12.99 |
-
 ## Teknik
 
 - Saf frontend (HTML/CSS/JS)
