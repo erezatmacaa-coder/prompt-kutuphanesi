@@ -42,8 +42,9 @@ function savePrompts() {
 
 function applyLang() {
   document.getElementById('langToggle').textContent = t('langLabel');
-  document.querySelector('.logo').innerHTML = `${t('nav.logo')}<span class="logo-accent">.</span>`;
-  document.querySelector('.hero h1').innerHTML = `${t('nav.title')} <span class="gradient">.</span>`;
+  document.querySelector('.logo').textContent = t('nav.title');
+  const titleParts = t('nav.title').split(' ');
+  document.querySelector('.hero h1').innerHTML = titleParts.length > 1 ? `${titleParts[0]} <span class="accent">${titleParts.slice(1).join(' ')}</span>` : t('nav.title');
   document.querySelector('.hero p').textContent = t('nav.subtitle');
   document.getElementById('addBtn').innerHTML = `<i class="fas fa-plus"></i> ${t('addBtn')}`;
   document.getElementById('searchInput').placeholder = t('searchPlaceholder');
@@ -249,20 +250,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     render();
   });
 });
-
-const glow = document.querySelector('.cursor-glow');
-if (glow) {
-  let mx = 0, my = 0, gx = 0, gy = 0;
-  document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
-  function animateGlow() {
-    gx += (mx - gx) * 0.06;
-    gy += (my - gy) * 0.06;
-    glow.style.left = gx + 'px';
-    glow.style.top = gy + 'px';
-    requestAnimationFrame(animateGlow);
-  }
-  animateGlow();
-}
 
 document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('keydown', e => {
